@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.white{
+    color:#fff
+}
+
+.form-title{
+    font-weight: 500;
+    margin: 30px 0px 30px 0px;
+    color: #20224b;
+}
+
+.form-container{
+    padding: 15px 30px;
+}
+
+mat-form-field.txtarea {
+    min-height: 100px;
+    height: initial;
+    width: 100%;
+}
+
+mat-form-field textarea {
+        height: 65px;
+        resize: none;
+}
+
+.custom-file{
+    margin-top: 25px;
+}
+
+.custom-file-label{
+    text-align: left;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Adjuntar";
+}
+
+.actions{
+    margin-top: 15px;
+    width: 90%;
+    text-align: end;
+    align-items: flex-end; 
+}
+
+.add-row{
+    text-align: end;
+    margin-top: 15px;
+}
+
+.blue-btn{
+    background-color: #20224b;
+    color: #fff;
+}
+
+.prof-row{    
+    width: 90%;
+    margin-left: 30px;
+}
+
+
+/*big screens*/
+@media only screen and (min-width: 1530px)  { 
+
+    .saludo-mobile{
+        display: none;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    .column {
+        float: left;
+        padding: 10px;
+    
+    }
+
+    .left {
+        width: 60%;
+        /* padding: 50px 10px; */
+    }
+
+    .right {
+        width: 40%;
+        padding: 50px 75px;
+        background-color: #20224b;
+        height: 100%;
+    }
+
+    /* Clear floats after the columns */
+    .contenedor:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .contenedor{
+        width: 80%;
+        height: 70vh;
+        box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.74);
+        -webkit-box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.74);
+        -moz-box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.74);
+    }
+
+    .personales >.col-sm > mat-form-field{
+        width: 50%; 
+   }
+   
+   .formulario-seccion >.col-sm > mat-form-field{
+       width: 80%; 
+   }
+   
+   .profesionales > .row > .col-6 > mat-form-field{
+       width: 80%;
+   }
+}
+
+/*medium screens*/
+
+@media only screen and (max-width: 1529px)  { 
+
+    .saludo-mobile{
+        display: none;
+    }
+    /* Create two unequal columns that floats next to each other */
+    .column {
+        float: left;
+        padding: 10px;
+    
+    }
+
+    .left {
+        width: 60%;
+        /* padding: 50px 10px; */
+    }
+
+    .right {
+        width: 40%;
+        padding: 50px 75px;
+        background-color: #20224b;
+        height: 100%;
+    }
+
+    /* Clear floats after the columns */
+    .contenedor:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .contenedor{
+        width: 100vw;
+        height: 100vh;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.74);
+    }
+
+    .personales >.col-sm > mat-form-field{
+        width: 80%; 
+   }
+   
+   .formulario-seccion >.col-sm > mat-form-field{
+       width: 90%; 
+   }
+   
+   .profesionales > .row > .col-6 > mat-form-field{
+       width: 90%;
+   }
+}
+
+
+/*little screens or mobile*/
+@media only screen and (max-width: 1000px){
+
+    .saludo-mobile{
+        width: 100%;
+        background-color: #20224b;
+        height: 100%;
+        padding: 15px;
+    }
+
+    
+    .right{
+        display: none;
+    }
+
+    .saludo-mobile{
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        /* padding: 50px 10px; */
+    }
+
+    .contenedor{
+        width: 100vw;
+        height: 100vh;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.74);
+    }
+
+    .personales >.col-sm > mat-form-field{
+        width: 95%; 
+   }
+   
+   .formulario-seccion >.col-sm > mat-form-field{
+       width: 80%; 
+   }
+   
+   .profesionales > .row > .col-6 > mat-form-field{
+       width: 80%;
+   }
+}
+
+/*aqui van las media queries*/
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.exitosa{
+    margin-top: 27%;
+}
+
+.logo{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.logo-mobile{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.mat-form-field {
+   margin-top: 16px;
+}
+
+.tall > .radio > .clickeable{
+    border: 1px solid;
+    border-color: #20224b;
+    min-height: 290px;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.wide > .radio > .clickeable{
+    border: 1px solid;
+    border-color: #20224b;
+    min-height: 80px; 
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    /*margin-bottom: 15px;*/
+    padding: 0 15px;
+}
+.radio{
+    width: 100%;
+}
+
+.clickeable:hover{
+    border: 2px solid !important;
+    cursor: pointer;
+}
+
+ input[type=radio] {
+    display: none;
+}
+
+ input[type=radio]:checked + .radio {
+    border: 2px solid;
+    border-color: #20224b;
+}
+
+.form-control.ng-untouched,
+.form-control.ng-valid {
+    border-color: #ccc !important;
+}
